@@ -17,6 +17,7 @@ a {
     text-decoration: none;
 }
 
+
 .wrap {
     position: relative;
     width: 100%;
@@ -49,22 +50,32 @@ a {
     padding-left: 20px;
 }
 
-.visit:hover a img {
+.visit a {
+    position: relative;
+    top: 41px;
+    left: -25px;
+    padding: 50px 150px;
+}
+
+.visit:hover img {
     transform: translateX(60px);
 }
 
-.visit a {
-    position: relative;
+.visit span {
+    position: absolute;
+    top: 0;
+    left: 0;
     color: #E9E6DC;
     font-size: 35px;
-    padding: 50px;
+    padding: 3px 0 0 10px;
+    pointer-events: none;
 }
 
-.visit a img {
+.visit img {
     position: absolute;
     width: 250px;
-    bottom: 6px;
-    right: -150px;
+    bottom: -23px;
+    right: -105px;
     pointer-events: none;
     transition: transform 0.2s ease;
 }
